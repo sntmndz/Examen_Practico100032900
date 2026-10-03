@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MULTI-VENTAS</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="bg-white py-3">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
+          <span class="logo-izq">MULTI</span><span class="logo-der">VENTAS</span>
+        </div>
+
+        <div class="col-md-4 mb-2 mb-md-0">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar productos...">
+            <button class="btn boton-buscar"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center text-md-end">
+          <small class="text-muted">Atencion a clientes</small>
+          <h5 class="mb-0">+52 961 555 0198</h5>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <nav class="barra-menu">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3">
+          <div class="dropdown">
+            <button class="boton-categorias dropdown-toggle w-100" data-bs-toggle="dropdown">
+              <i class="fas fa-bars"></i> Categorias
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#categorias">Ropa</a></li>
+              <li><a class="dropdown-item" href="#categorias">Tecnologia</a></li>
+              <li><a class="dropdown-item" href="#categorias">Calzado</a></li>
+              <li><a class="dropdown-item" href="#categorias">Cuidado personal</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link activo" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#productos">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#categorias">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+              </ul>
+              <span class="iconos-menu">
+                <i class="fas fa-heart"></i> (0)
+                <i class="fas fa-shopping-cart ms-3"></i> (0)
+              </span>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="container mt-4">
+    <div class="row">
+
+      <div class="col-lg-8 mb-3">
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#carrusel" data-bs-slide-to="1"></button>
+            <button data-bs-target="#carrusel" data-bs-slide-to="2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carrusel-2.jpg" class="d-block w-100" alt="Estilo mujer">
+              <div class="texto-carrusel">
+                <h1>Moda de la Mujer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque odit eius numquam dolores natus aut aliquid, tenetur vitae debitis commodi voluptas earum, necessitatibus quis ducimus laborum rerum molestias quia suscipit?</p>
+                <a href="#productos" class="btn boton-borde">Ver Mas</a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/carrusel-1.jpg" class="d-block w-100" alt="Estilo hombre">
+              <div class="texto-carrusel">
+                <h1>Moda del Hombre</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique sapiente soluta fugit dolorum ea, rem voluptatibus! Libero doloremque amet quae, aut quibusdam, nostrum maiores, exercitationem quas cupiditate inventore quis.</p>
+                <a href="#productos" class="btn boton-borde">Ver Mas</a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img/carrusel-3.jpg" class="d-block w-100" alt="Estilo kids">
+              <div class="texto-carrusel">
+                <h1>Al estilo de los peques</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odit explicabo dicta sequi ab cupiditate officiis illum facilis consequuntur porro expedita, eos nulla laboriosam voluptates, voluptatibus voluptatem incidunt quia eum!</p>
+                <a href="#productos" class="btn boton-borde">Ver Mas</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="oferta mb-3">
+          <img src="img/oferta-1.jpg" alt="Oferta 1">
+          <div class="texto-oferta">
+            <p>DESCUENTO 20%</p>
+            <h3>Novedades de temporada</h3>
+            <a href="#productos" class="btn boton-naranja">Comprar</a>
+          </div>
+        </div>
+
+        <div class="oferta">
+          <img src="img/oferta-2.jpg" alt="Oferta 2">
+          <div class="texto-oferta">
+            <p>DESCUENTO 25%</p>
+            <h3>Coleccion exclusiva</h3>
+            <a href="#productos" class="btn boton-naranja">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container seccion-beneficios">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="beneficio"><i class="fas fa-check"></i> Calidad garantizada</div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="beneficio"><i class="fas fa-shipping-fast"></i> Envio gratis</div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="beneficio"><i class="fas fa-exchange-alt"></i> Devoluciones en 30 dias</div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="beneficio"><i class="fas fa-phone-volume"></i> Atencion 24/7</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categorias" class="container mt-5">
+    <h2 class="titulo-seccion">EXPLORA POR CATEGORIA</h2>
+    <div class="row">
+
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="categoria">
+          <img src="img/cat-1.jpg" alt="Moda">
+          <div>
+            <h6>Ropa</h6>
+            <small>100 Productos</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="categoria">
+          <img src="img/cat-2.jpg" alt="Tecnología">
+          <div>
+            <h6>Tecnologia</h6>
+            <small>100 Productos</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="categoria">
+          <img src="img/cat-3.jpg" alt="Zapatos">
+          <div>
+            <h6>Calzado</h6>
+            <small>100 Productos</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="categoria">
+          <img src="img/cat-4.jpg" alt="Cuidado personal">
+          <div>
+            <h6>Cuidado personal</h6>
+            <small>100 Productos</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="productos" class="container mt-4 mb-5">
+    <h2 class="titulo-seccion">LO MAS VENDIDO</h2>
+    <div class="row">
+
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="producto">
+          <img src="img/product-1.jpg" alt="Cámara">
+          <h6>Camara profesional</h6>
+          <p class="precio">$13,990.00 <del>$16,500.00</del></p>
+          <p class="estrellas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (99)
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="producto">
+          <img src="img/product-2.jpg" alt="Suéter">
+          <h6>Sueter azul clasico</h6>
+          <p class="precio">$329.00 <del>$499.00</del></p>
+          <p class="estrellas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (99)
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="producto">
+          <img src="img/product-3.jpg" alt="Lámpara">
+          <h6>Lampara de mesa elegante</h6>
+          <p class="precio">$1,090.00 <del>$1,490.00</del></p>
+          <p class="estrellas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (99)
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="producto">
+          <img src="img/product-4.jpg" alt="Tenis">
+          <h6>Tenis deportivos</h6>
+          <p class="precio">$859.00 <del>$1,099.00</del></p>
+          <p class="estrellas">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> (99)
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contacto" class="pie">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <h5>ESCRIBENOS</h5>
+          <p>Visitanos en nuestra sucursal</p>
+          <p><i class="fas fa-map-marker-alt"></i> Blvd. Belisario Domínguez 450</p>
+          <p><i class="fas fa-envelope"></i> multiventas@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +52 961 555 0198</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5>NAVEGA</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio">› Inicio</a></li>
+            <li><a href="#productos">› Tienda</a></li>
+            <li><a href="#categorias">› Galeria</a></li>
+            <li><a href="#contacto">› Nosotros</a></li>
+            <li><a href="#contacto">› Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5>SIGUENOS EN NUESTRAS REDES</h5>
+          <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="red-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="red-social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="red-social"><i class="fab fa-instagram"></i></a>
+        </div>
+
+      </div>
+
+      <hr>
+      <p class="text-center mb-0">&copy; Multi-Ventas | Examen Practico - 02 de Octubre del 2026 | Mendez Reyes Santiago Alberto 5J</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
